@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quattrocento";
+  color: #064d58;
+}
+
+/* max-width: 500px) { #descripcion { flex-direction: column; } } */
+#all {
+  background: linear-gradient(to bottom, #c1d2fdf1, white);
+}
+
+li {
+  list-style-type: none;
+}
+
+textarea {
+  height: 5em;
+  width: 30em;
+}
+
+/*HEADER*/
+#header {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background-color: #c1d2fd;
+  text-align: center;
+}
+
+#header .links {
+  flex-grow: 1;
+  font-size: 125%;
+}
+
+#header .links .link2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#header .links .link2 .list {
+  text-transform: uppercase;
+  justify-content: center;
+}
+#header .home {
+  display: flex;
+  width: 15%;
+  height: 100px;
+}
+#header .home img {
+  width: 95px;
+}
+/*
+
+.links {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+}
+.home {
+  position: relative;
+}
+#header .home img {
+  width: 60%;
+}
+/*{.links {
+
+}
+.list {
+  display: inline;
+}
+
+
+/*LINKS PROPERTIES*/
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #1098ad;
+  font-weight: bold;
+}
+a:active {
+  font-style: bold;
+}
+
+/*footer*/
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  background-color: #c1d2fda4;
+}
+
+#footer .rrss {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 50px;
+  right: 0;
+}
+#footer .rrss svg {
+  width: 30px;
+  margin: 5px;
+}
+
+#footer .flex-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 20px;
+}
+
+#footer .flex-info .nametitta {
+  display: flex;
+  justify-content: center;
+}
+#footer .flex-info img {
+  width: 30px;
+}
+
+#footer .flex-info .copyright {
+  display: flex;
+  font-size: 8px;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*MAIN*/
+#main {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main from sites*/
+
+.titles {
+  font-size: 200%;
+  text-align: center;
+  margin: 1%;
+}
+
+#main .conteiner-1 {
+  width: 100%;
+}
+#main .conteiner-1 img {
+  margin: 5px;
+}
+
+.titlereceta {
+  font-size: 20%;
+  font-weight: bold;
+}
+
+/*QUIENES SOMOS*/
+#main .conteiner-1 img {
+  width: 80%;
+}
+
+/*slide images from Index*/
+#main .slider-viewport {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#main .slider-viewport .slides {
+  display: flex;
+  margin: -10px 50px;
+  height: 800px;
+  width: 1320px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+#main .slider-viewport .logomain {
+  position: absolute;
+  opacity: 0.2;
+}
+#main .slider-viewport .logomain img {
+  width: 250px;
+}
+
+/*Contacto*/
+#main form {
+  background-color: #c1d2fd80;
+}
+
+#main .contacto-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main .contacto-flex .info1,
+.info2,
+.info3,
+.info4 {
+  margin: 15px;
+}
+
+#main .contacto-flex .info2 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#main .contacto-flex .yesno,
+.info4 {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  gap: 25px;
+}
+
+/*recetas*/
+
+/*GRID for recetas*/
+#main .conteiner-1 .grid_1 {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 2fr);
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  justify-items: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.titlereceta {
+  font-size: 200%;
+}
+.imagereceta {
+  max-width: 400px;
+  max-height: 400px;
+}
+.textreceta {
+  text-align: justify;
+  text-justify: inter-word;
+}
+#main .conteiner-1 .grid_1 .titlereceta {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#main .conteiner-1 .grid_1 .imagereceta {
+  grid-area: 1 / 2 / 2 / 3;
+}
+#main .conteiner-1 .grid_1 .textreceta {
+  grid-area: 2 / 1 / 3 / 3;
+}
+#main .conteiner-1 .grid_2 {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 2fr);
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  justify-items: center;
+  align-items: center;
+  margin: 5%;
+}
+#main .conteiner-1 .grid_2 .imagereceta {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#main .conteiner-1 .grid_2 .titlereceta {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#main .conteiner-1 .grid_2 .textreceta {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+/*Grid for productos*/
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  justify-items: center;
+  align-items: center;
+  padding: 1px;
+}
+.grid-productos img {
+  max-width: 100%;
+}
+
+.grid-productos img:hover {
+  opacity: 0.5;
+}
+
+.div01 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div02 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div03 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div04 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div05 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div06 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div07 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div08 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div09 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+/*grid opcion 2
+
+#grid_ {
+  border: solid 1px;
+  
+  padding: 5px;
+  justify-items: center;
+  align-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+#grid_ h2:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#grid_ img:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+#grid_ p:nth-child(3) {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+#grid_ h2:nth-child(4) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#grid_ img:nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+ #grid_ p:nth-child(6) {
+    grid-column: 1/3;
+    grid-row: 4/5;
+
+  */
+
+/* vista mobile */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /*HEADER*/
+  #header {
+    width: 100%;
+    height: auto;
+    font-size: 50%;
+  }
+  #header .links {
+    text-align: right;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #header .home {
+    width: 15%;
+    height: 50%;
+    justify-content: space-between;
+  }
+  #header .home img {
+    width: 40%;
+  }
+
+  /*FOOTER*/
+
+  #footer .rrss {
+    right: 0;
+  }
+  #footer .rrss svg {
+    width: 30px;
+    margin: 5;
+  }
+
+  /*ALL*/
+  #main {
+    padding: 0;
+    margin: 0;
+  }
+
+  /*INDEX*/
+
+  #main .slider-viewport {
+    height: 30%;
+  }
+  #main .slider-viewport .slides {
+    margin: 0;
+  }
+
+  #main .slider-viewport .logomain img {
+    width: 50%;
+  }
+
+  /*CONTACT*/
+
+  textarea {
+    height: 5em;
+    width: 15em;
+  }
+
+  #main .contacto-flex .info2 {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /*RECETAS*/
+  #main .conteiner-1 .grid_1 {
+    margin-top: 10%;
+  }
+  #main .conteiner-1 .grid_2 {
+    margin-top: 10%;
+  }
+}
